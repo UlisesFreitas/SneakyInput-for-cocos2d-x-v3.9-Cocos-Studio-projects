@@ -29,9 +29,9 @@ On HelloWorld.h
 
 Add 
 
-- #include "SneakyButton.h"
-- #include "SneakyButtonSkinnedBase.h"
-- #include "SneakyJoystickSkinnedBase.h"
+    #include "SneakyButton.h"
+    #include "SneakyButtonSkinnedBase.h"
+    #include "SneakyJoystickSkinnedBase.h"
 
 Below
 public:
@@ -42,7 +42,7 @@ public:
 HelloWorld.cpp
 Add
 
-Rect joystickBaseDimensions;
+    Rect joystickBaseDimensions;
     joystickBaseDimensions = Rect(0, 0, 160.0f, 160.0f);
     
     Point joystickBasePosition;
