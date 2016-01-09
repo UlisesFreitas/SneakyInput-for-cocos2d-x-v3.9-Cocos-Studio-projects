@@ -65,7 +65,7 @@ Add
     leftJoystick->retain();
     this->addChild(joystickBase);
     
-    And for button
+And for button
     
     Rect jumpButtonDimensions = Rect(0, 0, 64.0f, 64.0f);
     Point jumpButtonPosition;
@@ -91,7 +91,7 @@ Add
     jumpBtn->retain();
     this->addChild(jumpButtonBase);
     
-    And finally on update example:
+And finally on update example:
     
     void HelloWorldScene::update(float dt){
     
@@ -111,4 +111,6 @@ Add
             everboyBody->setVelocity(Vec2(0,100));
         }
     }
+
+Done now you have your dPad or Joystick and your buttons.
     
