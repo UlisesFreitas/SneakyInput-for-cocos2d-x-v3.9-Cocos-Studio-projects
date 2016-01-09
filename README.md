@@ -28,11 +28,11 @@ In case the HelloWorld i.e
 On HelloWorld.h
 
 Add 
-/* remember to put # before include clause
-include "SneakyButton.h"
-include "SneakyButtonSkinnedBase.h"
-include "SneakyJoystickSkinnedBase.h"
-*/
+remember to put #before include clause
+- #include "SneakyButton.h"
+- #include "SneakyButtonSkinnedBase.h"
+- #include "SneakyJoystickSkinnedBase.h"
+
 Below
 public:
     
