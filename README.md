@@ -91,3 +91,24 @@ Add
     jumpBtn->retain();
     this->addChild(jumpButtonBase);
     
+    And finally on update example:
+    
+    void HelloWorldScene::update(float dt){
+    
+        this->setViewPointCenter(_everboy->getPosition());
+    
+        if(leftJoystick->getVelocity().x > 0){
+            everboyBody->setVelocity( Vect( 200, 0 ) );
+        }
+        if(leftJoystick->getVelocity().x < 0){
+            everboyBody->setVelocity( Vect( -200, 0 ) );
+        }
+        if(leftJoystick->getVelocity().x == 0 ){
+            everboyBody->setVelocity( Vect( 0, everboyBody->getWorld()->getGravity().y ) );
+        }
+        if(jumpBtn->getValue()){
+            everboyBody->applyImpulse(Vec2(0, 200));
+            everboyBody->setVelocity(Vec2(0,100));
+        }
+    }
+    
